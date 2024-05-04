@@ -16,7 +16,7 @@ body {
     background-color: #404040;
     margin:0;
     font-family: "Noto Sans", sans-serif;
-    font-size: 0.94vw; /* conversion de 14px en vw pour lisibilité sur différents supports*/
+    font-size: 1.074vw; /* conversion de 16px en vw pour lisibilité sur différents supports*/
 }
 header,footer{
     color: white;
@@ -29,7 +29,7 @@ header,footer{
     align-items: center;
     
 }
-.Header2 {
+.navbarCTA {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -43,12 +43,15 @@ ul {
     align-items: center; /*alignement des éléments au centre*/
     list-style-type: none; /*suppression des puces*/
     
-    
-    
+}
+li:hover{ /*change le curseur de la souris en main au survol des éléments cliquables*/
+    cursor: pointer;
 }
 ul a {
     text-decoration: none; /*suppression du surlignage par défaut*/
     padding: 1em;
+    color: white;
+    font-size: 0.94vw;
 }
 button {
     background: #fb2056;
@@ -63,9 +66,7 @@ button {
 button:hover { /* changement de couleur de fond au survol*/
     background-color: #da1c4b;
 }
-.Header2 button {
-    font-size: 1.074vw;
-}
+
 footer  {
 
     font-size: 0.94vw; /* conversion de 14px en vw pour lisibilité sur différents supports*/
