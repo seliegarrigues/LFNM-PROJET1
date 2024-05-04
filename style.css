@@ -13,7 +13,7 @@
   }
 
 body {
-    background-color: rgb(55, 55, 71);
+    background-color: #404040;
     margin:0;
 }
 .Header1 {
@@ -61,4 +61,15 @@ button {
 }
 button:hover { /* changement de couleur de fond au survol*/
     background-color: #da1c4b;
+}
+footer  {
+    color: white;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 0.924vw; /* conversion de 14px en vw pour lisibilité sur différents supports*/
+    background-color:#404040 ;
+    text-align: center;
+    padding: 40px 0;
+}
+address{
+    font-style: normal;
 }
