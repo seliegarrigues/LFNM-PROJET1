@@ -1,6 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/*propriété body */
+* {
+    box-sizing: border-box; /* Opera/IE 8+ ok */
+  
+  }
+   
+     
+  html {
+    scroll-behavior: auto;
+    width: 100%;
+  
+  }
+
 body {
     background-color: rgb(55, 55, 71);
+    margin:0;
 }
 header {
     margin:0 125px;
@@ -11,7 +25,7 @@ header {
     align-items: center;
     
 }
-.Header {
+.Header2 {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -22,8 +36,8 @@ header {
 ul {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    list-style-type: none;
+    align-items: center;/*alignement des éléments au centre*/
+    list-style-type: none;/*suppression des puces*/
     
     
     
@@ -31,17 +45,20 @@ ul {
 ul a {
     color: white;
     font-family: "Noto Sans", sans-serif;
-    font-size: 14px;
-    text-decoration: none;
+    font-size: 0.924vw;/* conversion de 14px en vw pour lisibilité sur différents supports*/
+    text-decoration: none;/*suppression du surlignage par défaut*/
     padding: 1em;
 }
 button {
     background: #fb2056;
     padding: 8px 40px;
-    border-radius: 20%;
+    border-radius: 30px;/*bord du bouton arrondi*/
     border: 0;
     color: white;
     font-weight: bold;
     font-family: "Noto Sans", sans-serif;
-    font-size: 16px;
+    font-size: 1.056vw;
+}
+button:hover {/* changement de couleur de fond au survol*/
+    background-color: #da1c4b;
 }
