@@ -15,11 +15,15 @@
 body {
     background-color: #404040;
     margin:0;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 0.94vw; /* conversion de 14px en vw pour lisibilité sur différents supports*/
+}
+header,footer{
+    color: white;
 }
 .Header1 {
-    margin:0 125px;
-    padding: 20px;
-    font-family: "Noto Sans", sans-serif;
+    margin:0 8.389vw;
+    padding: 1.342vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,8 +33,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    max-width: 800px;
-    color: white;
+    max-width: 53.691vw;
+   
   
 }
 ul {
@@ -43,32 +47,31 @@ ul {
     
 }
 ul a {
-    color: white;
-    font-family: "Noto Sans", sans-serif;
-    font-size: 0.924vw; /* conversion de 14px en vw pour lisibilité sur différents supports*/
     text-decoration: none; /*suppression du surlignage par défaut*/
     padding: 1em;
 }
 button {
     background: #fb2056;
-    padding: 8px 40px;
-    border-radius: 30px; /*bord du bouton arrondi*/
+    padding: 0.537vw 2.685vw;
+    border-radius: 2.013vw; /*bord du bouton arrondi*/
     border: 0;
     color: white;
     font-weight: bold;
     font-family: "Noto Sans", sans-serif;
-    font-size: 1.056vw;
+    font-size: 0.94vw;
 }
 button:hover { /* changement de couleur de fond au survol*/
     background-color: #da1c4b;
 }
+.Header2 button {
+    font-size: 1.074vw;
+}
 footer  {
-    color: white;
-    font-family: "Noto Sans", sans-serif;
-    font-size: 0.924vw; /* conversion de 14px en vw pour lisibilité sur différents supports*/
+
+    font-size: 0.94vw; /* conversion de 14px en vw pour lisibilité sur différents supports*/
     background-color:#404040 ;
     text-align: center;
-    padding: 40px 0;
+    padding: 2.685vw 0;
 }
 address{
     font-style: normal;
