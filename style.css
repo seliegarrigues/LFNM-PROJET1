@@ -44,9 +44,26 @@ header {
     background-image: url(https://websitedemos.net/outdoor-adventure-02/wp-content/uploads/sites/351/2018/11/hero-bg.jpg);
     background-attachment: fixed;
     background-size: cover;
-    background-color: #404040;
-    overlay: opacity 0.65;
+    background-position: center;
+    background-repeat: no-repeat;
+
+  
 }
+/*.image-container {
+    position: relative;
+    height: 18.57vw
+}
+.image-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* 70% d'opacité 
+  }
+  */
+  
 .Header1 {
     margin:0 8.389vw;
     padding: 1.342vw;
@@ -109,6 +126,8 @@ address{
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
+    padding-bottom: 4.85vw;
+    margin-bottom: 4.85vw;
 }
 .Header2 span {
     width: 4%;
