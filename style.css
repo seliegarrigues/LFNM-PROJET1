@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 /*propriété body */
 * {
     box-sizing: border-box; /* Opera/IE 8+ ok */
@@ -20,6 +21,31 @@ body {
 }
 header,footer{
     color: white;
+}
+h2, h1, h3, h4 {
+    font-family: "Montserrat",sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+h1 {
+    font-size: 4.295vw;
+    font-weight: 700;
+}
+h3{
+    font-size: 1.611vw;
+    font-weight: 600;
+}
+header {
+    height: 55.772vw;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column wrap;
+    background-image: url(https://websitedemos.net/outdoor-adventure-02/wp-content/uploads/sites/351/2018/11/hero-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #404040;
+    overlay: opacity 0.65;
 }
 .Header1 {
     margin:0 8.389vw;
@@ -65,6 +91,7 @@ button {
 }
 button:hover { /* changement de couleur de fond au survol*/
     background-color: #da1c4b;
+  
 }
 
 footer  {
@@ -76,4 +103,15 @@ footer  {
 }
 address{
     font-style: normal;
+}
+.Header2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+.Header2 span {
+    width: 4%;
+    margin:0 auto ;
+    border-bottom: #fb2056 solid 0.134vw;
 }
