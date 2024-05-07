@@ -13,7 +13,7 @@ body {
     padding: 0;
     font-family: "Noto Sans", sans-serif;
     font-size: 1.074vw;
-    /* conversion de 16px en vw pour lisibilité sur différents supports*/
+    /* taille de police par défaut de tous les textes inclus dans le body conversion de 16px en vw pour lisibilité sur différents supports*/
 }
 
 header,
@@ -224,23 +224,77 @@ button {
         /* Cache l'icône menu sur les écrans plus larges */
     }
 }
+.banner, #quote, .citation, img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%; /* Assure que les éléments prennent toute la largeur sur petits écrans */
+}
 .banner {
     display: flex;
-    justify-content: center;
-    padding: 4.85vw;
-    margin:4.85vw;
-   
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 4.85vw;
+    padding-bottom: 4.85vw;
+    padding-left: 10px;
+    gap: 40px;
+    background-color: #f0f0f0; /* Ajout d'un fond légèrement gris */
+ 
 }
 #quote {
     width: 171px;
-    height: 72px;
-    color: beige;
+    height: 5.698vw;
+    display: flex;
+   justify-content: center;
 
 }
+/* Ajustement pour la citation */
 .citation {
+    padding: 15px;
+    border-radius: 10px; /* Bords arrondis pour la citation */
+    margin-top: 20px; /* Ajout d'un espacement en haut */
+
+
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    justify-content:flex-start;
-    height: 90px;
+    justify-content: flex-end;
+    align-items: center;
+    
 }
+.citation q {
+    font-size: 16px;
+}*/
+/* Styles pour les écrans de largeur inférieure ou égale à 640px */
+
+@media (max-width: 640px) {
+
+    .banner, #quote, .citation, img {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    img {
+        max-width: 90%; /* Limite la largeur de l'image pour éviter qu'elle soit trop grande */
+        height: auto; /* Maintient le ratio de l'image */
+    }
+}
+/* Styles pour les écrans de largeur supérieure à 640px */
+
+@media (min-width: 641px) {
+    .banner, #quote, img {
+        flex-direction: row; /* Les éléments sont en ligne sur les écrans plus larges*/ 
+        justify-content: space-evenly; /* Distribue l'espace uniformément ;*/
+    }
+
+    img {
+        max-width: 50%; /* Limite la taille de l'image sur les grands écrans */
+    }
+
+    .citation q {
+        font-size: 16px; /* Rétablit la taille originale des citations sur les grands écrans */
+    }
+}
+
