@@ -8,7 +8,8 @@ body {
     padding: 0;
     font-family: "Noto Sans", sans-serif;
     font-size: 1em;
-    /* taille de police par défaut de tous les textes inclus dans le body conversion de 16px en em pour lisibilité sur différents supports*/
+    /*dimensions en % ou en vw.
+     taille de police par défaut de tous les textes inclus dans le body conversion de 16px en em pour lisibilité sur différents supports*/
 }
 
 header,
@@ -88,7 +89,6 @@ header {
     align-items: center;
     flex-direction: row;
     
-
 }
 
 .navbarCTA {
@@ -96,7 +96,6 @@ header {
     align-items: center;
     justify-content: space-around;
     max-width: 53.691vw;
-
 
 }
 
@@ -157,7 +156,9 @@ button:hover {
 footer {
 
     font-size: 0.94vw;
-    /* positionnement est centré horizontalement et équitablement réparti verticalement - conversion de 14px en vw pour lisibilité sur différents supports*/
+    /* positionnement est centré horizontalement et équitablement réparti verticalement -
+    dimensions en % ou en vw. 
+    conversion de 14px en vw pour lisibilité sur différents supports*/
     background-color: #404040;
     text-align: center;
     padding: 30px 0;
@@ -215,7 +216,6 @@ address {
     }
 }
 
-
 header {
     flex-direction: column;
     /* Les éléments de l'en-tête s'alignent en colonne */
@@ -228,14 +228,10 @@ header {
     /* Espacement autour du bouton */
 }
 
-
-
 button {
     margin-top: 1.32vw;
     /* Ajoute de l'espace au-dessus du bouton TAKE ACTION */
 }
-
-
 
 /* Styles pour les écrans de largeur supérieure à 640px */
 @media (min-width: 641px) {
@@ -322,7 +318,7 @@ button {
     display: flex;
     justify-content: space-around;
    flex-direction: column;
-   align-items: center;
+   align-items: center;/*Tout est centré ici. */
    gap: 30px;
    padding: 10px;
 }
@@ -336,12 +332,12 @@ button {
 }
 .evt {
     display: flex;
-    justify-content: center;
+    justify-content: center;/*Tout est centré ici. */
 }
 .evt1 ,.evt2 {
     display: flex;
     flex-flow: column wrap;
-    align-items: center;
+    align-items: center;/*Tout est centré ici. */
 }
 .image {
     display: inline-block;
@@ -353,4 +349,30 @@ button {
     width: 88%;
     height: auto;
     vertical-align: middle;
+}
+.bg-fix {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    padding: 10%;
+    background-image: url(https://websitedemos.net/outdoor-adventure-02/wp-content/uploads/sites/351/2020/01/section-bg-img.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-fix-1, .bg-fix-2 {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+.bg-fix-2 span {
+    width: 10%;
+    border-bottom: #fb2056 solid 0.200vw;  
+}
+.bg-fix-2 button {
+    display: flex;
+    align-items: center;
+    width: 25%;
+
 }
