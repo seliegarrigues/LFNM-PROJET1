@@ -31,8 +31,8 @@ h1 {
     font-size: 4.295vw;
     font-weight: 700;
     text-align: center;
-    padding: 1px 0 124px 0;
-    margin: 1px 0 124px 0;
+    padding: 62px 0 62px 0;
+    margin: 62px 0 62px 0;
 }
 h2 {
     font-size:2.282vw;
@@ -59,12 +59,10 @@ img {
 }
 
 header {
-    height: 55.772vw;
     display: flex;
     justify-content: space-between;
     flex-flow: column wrap;
     background-image: linear-gradient(rgba(64, 64, 64, 0.6), rgba(64, 64, 64, 0.6)), url(https://websitedemos.net/outdoor-adventure-02/wp-content/uploads/sites/351/2018/11/about-bg-5.jpg);
-    background-attachment: fixed; /*Le background est fixé (le menu et les titres défilent devant l'image lors du scroll).*/
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -170,7 +168,8 @@ address {
 .Miss{
     display:flex;
     padding: 50px 38px 70px 38px;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
     background-color: #f0f0f0;
 
@@ -179,7 +178,7 @@ address {
     display: flex;
     flex-flow: column;
     justify-content: space-around;
-    width: 48%;
+    width: 38%;
    height: 100%;
 }
 .mission p {
