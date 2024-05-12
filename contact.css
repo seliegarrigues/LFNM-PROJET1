@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.08vw;
+    /*dimensions en % ou en vw.
+     taille de police par défaut de tous les textes inclus dans le body conversion de 16px en em pour lisibilité sur différents supports*/
+}
+
+header,
+footer {
+    color: white;
+}
+section {
+    background-color: #f0f0f0;
+}
+
+h2,
+h1,
+h3,
+h4,
+h5 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 4.295vw;
+    font-weight: 700;
+    text-align: center;
+    padding: 62px 0 62px 0;
+    margin: 62px 0 62px 0;
+}
+h2 {
+    font-size:2.282vw;
+    font-weight:650; 
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.611vw;
+    font-weight: 600;
+}
+h4 {
+    font-weight: 580;
+    font-size: 1.500vw;
+    margin-top: 0;
+}
+h5 {
+    font-weight: 560;
+    font-size: 1.400vw;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 4px;
+    object-fit: cover;
+    filter: brightness(103%) contrast(96%)saturate(101%) hue-rotate(353deg);
+    width: 95%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column wrap;
+    background-image: linear-gradient(rgba(64, 64, 64, 0.6), rgba(64, 64, 64, 0.6)), 
+    url(https://websitedemos.net/outdoor-adventure-02/wp-content/uploads/sites/351/2018/11/about-bg-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#Take-Action {
+    width: 100%;
+}
+/* 
+ positionnement du logo par rapport au menu et utilisation de *display:flex* pour obtenir le positionnement désiré*/
+
+.Header1 {
+    margin: 0 8.389vw;
+    padding: 1.342vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+.navbarCTA {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 53.691vw;
+
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*alignement des éléments au centre*/
+    list-style-type: none;
+    /*suppression des puces*/
+
+}
+
+li:hover {
+    /*change le curseur de la souris en main au survol des éléments cliquables*/
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    /*suppression du surlignage par défaut*/
+    color: white;
+    font-size: 1.08vw;
+    width: max-content;
+    
+}
+a:visited {
+    background-color: #000;/*liens visités auront un fond noir et une couleur blanche*/  
+     color: #fff;
+}
+
+#Take-Action a {
+    display: block;
+    width: 100%;
+}
+ul a {
+    padding: 1em;
+}
+
+button {
+    background: #fb2056;
+    padding: 0.537vw 1.285vw;
+    width: 12.383vw;
+    border-radius: 2.013vw;
+    /*bord du bouton arrondi*/
+    border: 0;
+    color: white;
+    font-weight: bold;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1vw;
+}
+
+button:hover {
+    /* changement de couleur de fond au survol*/
+    background-color: #da1c4b;
+    transition: background-color 0.3s ease;
+
+}.separator {
+    width: 12%;
+    margin-bottom: 4%;
+    border-bottom: #fb2056 solid 0.268vw;
+}
+
+
+footer {
+
+    font-size: 0.94vw;
+    /* positionnement est centré horizontalement et équitablement réparti verticalement -
+    dimensions en % ou en vw. 
+    conversion de 14px en vw pour lisibilité sur différents supports*/
+    background-color: #404040;
+    text-align: center;
+    padding: 30px 0;
+}
+
+address {
+    font-style: normal;
+}
+label {
+    display: inline-block;
+    width: 120px;
+}
+input {
+    width: 200px;
+}
+input:focus {
+    outline: dotted 1px grey;
+    outline-offset: 2px;
+}
+#envoi,  {
+    width: 100px;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+    justify-content: center;
+    gap: 20px;
+}
+div {
+    width: 40%;
+}
