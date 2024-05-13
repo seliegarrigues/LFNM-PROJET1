@@ -10,6 +10,7 @@ body {
     font-size: 1.08vw;
     /*dimensions en % ou en vw.
      taille de police par défaut de tous les textes inclus dans le body conversion de 16px en em pour lisibilité sur différents supports*/
+     
 }
 
 header,
@@ -185,16 +186,39 @@ input:focus {
     outline: dotted 1px grey;
     outline-offset: 2px;
 }
-#envoi,  {
-    width: 100px;
+#envoi  {
+    width: 60px;
 }
 main {
     display: flex;
     flex-wrap: wrap;
     padding: 5%;
+    margin: 5%;
     justify-content: center;
     gap: 20px;
 }
-div {
+/*div {
     width: 40%;
+}*/
+#logo {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+    width: 30%;
+}
+.form, .contact {
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+  
+  
+   
+}
+.contact h5 {
+    padding: 0;
+    margin:0;
+}
+#formulaire {
+    width: 30%;
 }

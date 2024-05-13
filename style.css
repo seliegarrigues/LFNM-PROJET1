@@ -356,10 +356,15 @@ button {
     gap: 3px;
     padding: 10%;
     background-image: url(https://websitedemos.net/outdoor-adventure-02/wp-content/uploads/sites/351/2020/01/section-bg-img.jpg);
+    background-blend-mode: color;
+    background-color: rgba(0, 0, 0, .7);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+.bg-fix h2, .bg-fix p {
+    color: white;
 }
 .bg-fix-1, .bg-fix-2 {
     display: flex;
