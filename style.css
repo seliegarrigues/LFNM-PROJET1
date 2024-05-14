@@ -62,25 +62,12 @@ header {
     background-position: center;
     background-repeat: no-repeat;
 }
+    /* Les éléments de l'en-tête s'alignent en colonne */
+
 #Take-Action {
     width: 100%;
 }
-/* #image-filtre { 
-    position: relative;
-    z-index: 1;
-}
-
-#image-filtre::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(64, 64, 64, 0.8); /* Assombrissement avec une opacité de 80% 
-    z-index: -1;
-}
- positionnement du logo par rapport au menu et utilisation de *display:flex* pour obtenir le positionnement désiré*/
+/*positionnement du logo par rapport au menu et utilisation de *display:flex* pour obtenir le positionnement désiré*/
 
 .Header1 {
     margin: 0 8.389vw;
@@ -95,10 +82,14 @@ header {
 .navbarCTA {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    /* Espacement autour du bouton */
     max-width: 53.691vw;
+    width: 100%;
+    /* Étendre la barre de navigation sur toute la largeur */
 
 }
+
 
 ul {
     display: flex;
@@ -146,6 +137,8 @@ button {
     font-weight: bold;
     font-family: "Noto Sans", sans-serif;
     font-size: 1vw;
+    margin-top: 1.32vw;
+    /* Ajoute de l'espace au-dessus du bouton TAKE ACTION */
 }
 
 button:hover {
@@ -184,64 +177,6 @@ address {
     margin: 0 auto;
     border-bottom: #fb2056 solid 0.134vw;
 }
-
-/* comportement du menu sur différentes largeurs d'écrans -Styles pour les écrans de largeur inférieure ou égale à 640px */
-
-@media (max-width: 640px) {
-    .navbarCTA nav ul {
-        display: none;
-        /* Cache la liste de navigation */
-        flex-direction: column;
-        width: 100%;
-    }
-
-
-    .icone-menu {
-        display: block;
-        /* Assure que l'icône est visible en mode mobile */
-        cursor: pointer;
-        position: absolute;
-        top: 1.32vw;
-        right: 1.32vw;
-        font-size: 1.584vw;
-        background: color #fb2056;
-        /* Couleur de fond */
-        color: white;
-        padding: 0.66vw;
-        border-radius: 5px;
-        z-index: 1000; /*ordre et position des élements flexibles ou enfants*/
-        transition: background-color 0.3s ease;
-    }
-
-    .icone-menu:hover {
-        background-color: #da1c4b;
-    }
-}
-
-header {
-    flex-direction: column;
-    /* Les éléments de l'en-tête s'alignent en colonne */
-}
-
-.navbarCTA {
-    width: 100%;
-    /* Étendre la barre de navigation sur toute la largeur */
-    justify-content: space-between;
-    /* Espacement autour du bouton */
-}
-
-button {
-    margin-top: 1.32vw;
-    /* Ajoute de l'espace au-dessus du bouton TAKE ACTION */
-}
-
-/* Styles pour les écrans de largeur supérieure à 640px */
-@media (min-width: 641px) {
-    .icone-menu {
-        display: none;
-        /* Cache l'icône menu sur les écrans plus larges */
-    }
-}
 .banner, #quote, .citation, img { /*Cette partie est globalement centrée, sauf l'image sur le côté.*/
     display: flex;
     flex-direction: column;
@@ -254,66 +189,32 @@ button {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 4.85vw;
-    padding-bottom: 4.85vw;
-    padding-left: 10px;
+    padding: 4.85vw 0.201vw 4.85vw 0;
     gap: 40px;
     background-color: #f0f0f0; /* Ajout d'un fond légèrement gris */
  
 }
 #quote {
-    width: 171px;
-    height: 5.698vw;
+    width: 11.477vw;
     display: flex;
    justify-content: center;
+   margin: 1vw;
 
 }
 /* Ajustement pour la citation */
 .citation {
-    padding: 15px;
+    padding: 1.007vw 0 1.007vw 0;
     border-radius: 10px; /* Bords arrondis pour la citation */
-    margin-top: 20px; /* Ajout d'un espacement en haut */
-
-
+    margin-top: 1.342vw; /* Ajout d'un espacement en haut */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    width: 70%;
     
 }
 .citation q {
-    font-size: 16px;
-}*/
-/* Styles pour les écrans de largeur inférieure ou égale à 640px */
-
-@media (max-width: 640px) {
-
-    .banner, #quote, .citation, img {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    img {
-        max-width: 90%; /* Limite la largeur de l'image pour éviter qu'elle soit trop grande */
-        height: auto; /* Maintient le ratio de l'image */
-    }
-}
-/* Styles pour les écrans de largeur supérieure à 640px */
-
-@media (min-width: 641px) {
-    .banner, #quote, img {
-        flex-direction: row; /* Les éléments sont en ligne sur les écrans plus larges*/ 
-        justify-content: space-evenly; /* Distribue l'espace uniformément ;*/
-    }
-
-   #quote img {
-        max-width: 50%; /* Limite la taille de l'image sur les grands écrans */
-    }
-
-    .citation q {
-        font-size: 16px; /* Rétablit la taille originale des citations sur les grands écrans */
-    }
+    font-size: 1.08vw;
 }
 .evenement {
     background-color: #f0f0f0;
@@ -322,7 +223,8 @@ button {
    flex-direction: column;
    align-items: center;/*Tout est centré ici. */
    gap: 30px;
-   padding: 10px;
+   padding: 4% 2% 10% 2%;
+   
 }
 .separator {
     width: 18%;
@@ -346,7 +248,6 @@ button {
     box-shadow: 10px 10px 0 1px rgba(0, 0, 0, .07);
     filter: brightness(103%) contrast(96%)saturate(101%) hue-rotate(353deg);
     padding: 3px;
-  
     width: 90%;
     
 }
@@ -396,5 +297,92 @@ button {
     align-content: space-between;
 }
 .blank {
-    height: 1px;
+    height: 1%;
 }
+
+/* comportement du menu sur différentes largeurs d'écrans
+ -Styles pour les écrans de largeur inférieure ou égale à 640px */
+@media (max-width: 640px) {
+    .navbarCTA nav ul {
+        display: none;
+        /* Cache la liste de navigation */
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+    .icone-menu {
+        display: block;
+        /* Assure que l'icône est visible en mode mobile */
+        cursor: pointer;
+        position: absolute;
+        top: 1.32vw;
+        right: 1.32vw;
+        font-size: 6vw;
+        background: color #fb2056;
+        /* Couleur de fond */
+        color: white;
+        padding: 0.66vw;
+        border-radius: 5px;
+        z-index: 1000; /*ordre et position des élements flexibles ou enfants*/
+        transition: background-color 0.3s ease;
+    }
+
+    .icone-menu:hover {
+        background-color: #da1c4b;
+    }
+    .banner, #quote, .citation, img {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    img {
+        max-width: 99%; /* Limite la largeur de l'image pour éviter qu'elle soit trop grande */
+        height: auto; /* Maintient le ratio de l'image */
+    }
+    body, footer, header,a,.citation q {
+        font-size: 8px;
+    }
+    button {
+        width: 11vh;
+    }
+    h1 {
+        font-size: 8vw;
+    }
+    h2 {
+        font-size: 4.295vw;
+       
+    }
+    h3 {
+        font-size:2.282vw;
+        
+    }
+    h4 {
+        font-size: 1.611vw;
+       
+    }
+}
+
+
+
+/* Styles pour les écrans de largeur supérieure à 640px */
+@media (min-width: 641px) {
+    .banner, #quote, img {
+        flex-direction: row; /* Les éléments sont en ligne sur les écrans plus larges*/ 
+        justify-content: space-evenly; /* Distribue l'espace uniformément ;*/
+    }
+
+   #quote img {
+        max-width: 60%; /* Limite la taille de l'image sur les grands écrans */
+    }
+
+    .citation q {
+        font-size: 16px; /* Rétablit la taille originale des citations sur les grands écrans */
+    }
+    .icone-menu {
+        display: none;
+        /* Cache l'icône menu sur les écrans plus larges */
+    }
+}
+

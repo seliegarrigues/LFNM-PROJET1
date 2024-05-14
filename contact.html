@@ -48,15 +48,14 @@
             <h2>We're Ready, Let's Talk.</h2>
             <form id="formulaire" method="post" action="mon-script.php" enctype="application/x-www-form-urlencoded" name="inscription">
                 <p><label for="nom"></label>
-                    <input type="text" id="nom" name="nom" placeholder="Your name">
+                    <input type="text" id="nom" name="nom" placeholder="Your name" required>
                 </p>
                 <p><label for="email"></label>
                     <input type="email" id="email" name="email" placeholder="Email Address" required>
                 </p>
-                <p> <label for="commentaire"></label><textarea name="commentaire" id="commentaire" rows="6" cols="100" placeholder="Message"></textarea></p>
-                <p><input type="submit" name="envoyer" value="envoyer" id="envoi"></p>
+                <p> <label for="commentaire"></label><textarea name="commentaire" id="commentaire" rows="6" cols="100" placeholder="Message" required></textarea></p>
             </form>
-            <button type="submit" id="send"><a href="#">Send message</a></button>
+            <button type="submit" id="send"><input type="submit" name="envoyer" value="Send Message" id="send" width="100%" ><a href="#"></a></button>
         </div>
         <div class="contact">
             <h2>Contact Info</h2>
@@ -68,9 +67,9 @@
             <h5>Follow Us</h5>
             <div id="logo">
 
-                <p><span><img src="./Images/fb.png" alt="facebook logo"></span></p>
-                <p><span><img src="./Images/twitter.png" alt="twitter logo"></span></p>
-                <p><span><img src="./Images/youtube.png" alt="youtube logo"></span></p>
+                <p><span><a href="contact.html"><img src="./Images/fb.png" alt="facebook logo"></a></span></p>
+                <p><span><a href="contact.html"><img src="./Images/twitter.png" alt="twitter logo"></a></span></p>
+                <p><span><a href="contact.html"><img src="./Images/youtube.png" alt="youtube logo"></a></span></p>
             </div>
         </div>
     </main>

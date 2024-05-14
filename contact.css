@@ -180,7 +180,9 @@ label {
     width: 120px;
 }
 input {
-    width: 200px;
+    width: 90%;
+    line-height: 40px;
+    padding-left: 10px;
 }
 input:focus {
     outline: dotted 1px grey;
@@ -201,10 +203,10 @@ main {
     width: 40%;
 }*/
 #logo {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1%;
+    gap: 3%;
     width: 30%;
 }
 .form, .contact {
@@ -219,6 +221,49 @@ main {
     padding: 0;
     margin:0;
 }
-#formulaire {
-    width: 30%;
+.contact p {
+    margin-top: 1%;
+}
+textarea {
+    width: 90%;
+    padding: 10px   ;
+    
+}
+
+@media (max-width: 640px) {
+    .navbarCTA nav ul {
+        display: none;
+        /* Cache la liste de navigation */
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+    .icone-menu {
+        display: block;
+        /* Assure que l'icône est visible en mode mobile */
+        cursor: pointer;
+        position: absolute;
+        top: 1.32vw;
+        right: 1.32vw;
+        font-size: 1.584vw;
+        background: color #fb2056;
+        /* Couleur de fond */
+        color: white;
+        padding: 0.66vw;
+        border-radius: 5px;
+        z-index: 1000; /*ordre et position des élements flexibles ou enfants*/
+        transition: background-color 0.3s ease;
+    }
+
+    .icone-menu:hover {
+        background-color: #da1c4b;
+    }
+}
+/* Styles pour les écrans de largeur supérieure à 640px */
+@media (min-width: 641px) {
+    .icone-menu {
+        display: none;
+        /* Cache l'icône menu sur les écrans plus larges */
+    }
 }
