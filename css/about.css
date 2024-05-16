@@ -16,9 +16,6 @@ header,
 footer {
     color: white;
 }
-section {
-    background-color: #f0f0f0;
-}
 
 h2,
 h1,
@@ -65,7 +62,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-flow: column wrap;
-    background-image: linear-gradient(rgba(64, 64, 64, 0.6), rgba(64, 64, 64, 0.6)), url(https://websitedemos.net/outdoor-adventure-02/wp-content/uploads/sites/351/2018/11/services-bg.jpg);
+    background-image: linear-gradient(rgba(64, 64, 64, 0.6), rgba(64, 64, 64, 0.6)), url(https://websitedemos.net/outdoor-adventure-02/wp-content/uploads/sites/351/2018/11/about-bg-5.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -132,7 +129,7 @@ ul a {
 button {
     background: #fb2056;
     padding: 0.537vw 1.285vw;
-    width: 12.383vw;
+    width: 100%;
     border-radius: 2.013vw;
     /*bord du bouton arrondi*/
     border: 0;
@@ -174,7 +171,7 @@ address {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    
+    background-color: #f0f0f0;
 
 }
 .mission {
@@ -197,44 +194,6 @@ i {
     font-size: large;
    letter-spacing: 0.5cm;
 }
-#Titre {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    padding: 90px 200px 50px 200px;
-   
-    
-}
-#Titre p {
-    text-align: center;
-    padding: 0 160px 0 160px;
-
-}
-.evenement {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-around;
-    padding: 0 150px 100px 150px;
- 
-  
-}
-.evt {
-    width: 46%;
-}
-.desc {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-.desc p {
-    text-align: center;
-}
-.image {
-    padding-bottom: 19px;
-}
 
 @media (max-width: 640px) {
     .navbarCTA nav ul {
@@ -252,7 +211,7 @@ i {
         position: absolute;
         top: 1.32vw;
         right: 1.32vw;
-        font-size: 1.584vw;
+        font-size: 6vw;
         background: color #fb2056;
         /* Couleur de fond */
         color: white;
@@ -266,6 +225,7 @@ i {
         background-color: #da1c4b;
     }
 }
+
 /* Styles pour les écrans de largeur supérieure à 640px */
 @media (min-width: 641px) {
     .icone-menu {

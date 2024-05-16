@@ -62,7 +62,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
 }
-    /* Les éléments de l'en-tête s'alignent en colonne */
+/* Les éléments de l'en-tête s'alignent en colonne */
 
 #Take-Action {
     width: 100%;
@@ -87,7 +87,7 @@ header {
     max-width: 53.691vw;
     width: 100%;
     /* Étendre la barre de navigation sur toute la largeur */
-
+    
 }
 
 
@@ -98,7 +98,7 @@ ul {
     /*alignement des éléments au centre*/
     list-style-type: none;
     /*suppression des puces*/
-
+    
 }
 
 li:hover {
@@ -115,7 +115,7 @@ a {
 }
 a:visited {
     background-color: #000;/*liens visités auront un fond noir et une couleur blanche*/  
-     color: #fff;
+    color: #fff;
 }
 
 #Take-Action a {
@@ -129,7 +129,7 @@ ul a {
 button {
     background: #fb2056;
     padding: 0.537vw 1.285vw;
-    width: 12.383vw;
+    width: 11.383vw;
     border-radius: 2.013vw;
     /*bord du bouton arrondi*/
     border: 0;
@@ -145,22 +145,31 @@ button:hover {
     /* changement de couleur de fond au survol*/
     background-color: #da1c4b;
     transition: background-color 0.3s ease;
-
+    
 }
 
 footer {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
 
     font-size: 0.94vw;
     /* positionnement est centré horizontalement et équitablement réparti verticalement -
     dimensions en % ou en vw. 
     conversion de 14px en vw pour lisibilité sur différents supports*/
     background-color: #404040;
-    text-align: center;
-    padding: 30px 0;
+    padding: 30px;
 }
 
 address {
     font-style: normal;
+    width: 40%;
+}
+#fifthavenue {
+ text-align: right;
 }
 
 .Header2 {
@@ -362,6 +371,9 @@ address {
         font-size: 1.611vw;
        
     }
+    #fifthavenue {
+        text-align: left;
+       }
 }
 
 

@@ -138,7 +138,7 @@ ul a {
 button {
     background: #fb2056;
     padding: 0.537vw 1.285vw;
-    width: 12.383vw;
+    width: 100%;
     border-radius: 2.013vw;
     /*bord du bouton arrondi*/
     border: 0;
@@ -168,7 +168,7 @@ footer {
     conversion de 14px en vw pour lisibilité sur différents supports*/
     background-color: #404040;
     text-align: center;
-    padding: 30px 0;
+    padding: 30px;
 }
 
 address {
@@ -222,9 +222,7 @@ section {
     
     padding: 5% 10%;
 }
-p {
-    margin: 4%;
-}
+
 
 @media (max-width: 640px) {
     .navbarCTA nav ul {
@@ -242,7 +240,7 @@ p {
         position: absolute;
         top: 1.32vw;
         right: 1.32vw;
-        font-size: 1.584vw;
+        font-size: 6vw;
         background: color #fb2056;
         /* Couleur de fond */
         color: white;
