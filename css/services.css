@@ -252,12 +252,12 @@ i {
         position: absolute;
         top: 1.32vw;
         right: 1.32vw;
-        font-size: 6vw;
-        background: color #fb2056;
+        font-size: 5vw;
+        background-color: #fb2056;
         /* Couleur de fond */
         color: white;
-        padding: 0.66vw;
-        border-radius: 5px;
+        padding:0.56vw 2vw 0.4vw 2vw;
+        border-radius: 2px;
         z-index: 1000; /*ordre et position des élements flexibles ou enfants*/
         transition: background-color 0.3s ease;
     }
@@ -270,11 +270,48 @@ i {
         color: #000;
     }
 
-    .Header2{
-        background-image: linear-gradient(rgba(64, 64, 64, 0.6), rgba(64, 64, 64, 0.6)), url(https://websitedemos.net/outdoor-adventure-02/wp-content/uploads/sites/351/2018/11/services-bg.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+    img {
+        max-width: 99%; /* Limite la largeur de l'image pour éviter qu'elle soit trop grande */
+        height: auto; /* Maintient le ratio de l'image */
+    }
+    body, footer, header,a {
+        font-size: 9px;
+    }
+    button {
+        width: 9vh;
+    }
+    h1 {
+        font-size: 8vw;
+    }
+    h2 {
+        font-size: 4.295vw;
+       
+    }
+    h3 {
+        font-size:2.282vw;
+        
+    }
+    h4 {
+        font-size: 1.611vw;
+       
+    }
+    #fifthavenue {
+        text-align: left;
+       
+    }
+    .Header1 {
+        background-color: #f0f0f0;
+        margin: 0;
+        padding:3%
+    }
+    #logoblanc, .navbarCTA button {
+        display: none;
+    }
+    .Header1 img {
+        max-width: 50%;
+    }
+    footer span {
+        text-decoration: underline;
     }
 }
 /* Styles pour les écrans de largeur supérieure à 640px */
@@ -282,5 +319,8 @@ i {
     .icone-menu {
         display: none;
         /* Cache l'icône menu sur les écrans plus larges */
+    }
+    #logoblack {
+        display: none;
     }
 }
