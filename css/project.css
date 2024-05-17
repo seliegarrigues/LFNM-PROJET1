@@ -35,8 +35,8 @@ h1 {
     font-size: 4.295vw;
     font-weight: 700;
     text-align: center;
-    padding: 62px 0 62px 0;
-    margin: 62px 0 62px 0;
+    padding: 4.2vw 0 4.2vw 0;
+    margin: 4.2vw 0 4.2vw 0;
 }
 h2 {
     font-size:2.282vw;
@@ -90,6 +90,9 @@ header {
     align-items: center;
     flex-direction: row;
     
+}
+.Header2 {
+    margin-bottom: 6%;
 }
 
 .navbarCTA {
@@ -224,7 +227,8 @@ section {
 }
 
 
-@media (max-width: 640px) {
+/* Styles pour les petits écrans de largeur inférieur à 767px */
+@media (max-width: 767px) {
     .navbarCTA nav ul {
         display: none;
         /* Cache la liste de navigation */
@@ -291,14 +295,14 @@ section {
         display: none;
     }
     .Header1 img {
-        max-width: 50%;
+        max-width: 25%;
     }
     footer span {
         text-decoration: underline;
     }
 }
-/* Styles pour les écrans de largeur supérieure à 640px */
-@media (min-width: 641px) {
+/* Styles pour les écrans de largeur supérieure à 768px */
+@media (min-width: 768px) {
     .icone-menu {
         display: none;
         /* Cache l'icône menu sur les écrans plus larges */

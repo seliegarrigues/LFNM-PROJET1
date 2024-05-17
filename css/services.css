@@ -34,12 +34,13 @@ h1 {
     font-size: 4.295vw;
     font-weight: 700;
     text-align: center;
-    padding: 62px 0 62px 0;
-    margin: 62px 0 62px 0;
+    padding: 4.2vw 0 4.2vw 0;
+    margin: 4.2vw 0 4.2vw 0;
 }
 h2 {
     font-size:2.282vw;
     font-weight:650; 
+    text-align: center;
 }
 
 h3 {
@@ -84,6 +85,9 @@ header {
     align-items: center;
     flex-direction: row;
     
+}
+.Header1 img {
+    box-shadow: none;
 }
 
 .navbarCTA {
@@ -152,6 +156,9 @@ button:hover {
     /*margin: 0 auto;*/
     border-bottom: #fb2056 solid 0.268vw;
 }
+.Header2 {
+    margin-bottom: 6%;
+}
 
 
 footer {
@@ -162,7 +169,7 @@ footer {
     conversion de 14px en vw pour lisibilité sur différents supports*/
     background-color: #404040;
     text-align: center;
-    padding: 30px 0;
+    padding: 2.1vw 0;
 }
 
 address {
@@ -170,10 +177,11 @@ address {
 }
 .Miss{
     display:flex;
-    padding: 50px 38px 70px 38px;
+   flex-wrap:wrap ;
+    padding: 3.356vw 2.55vw 4.7vw 2.55vw;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 1.34vw;
     
 
 }
@@ -185,7 +193,7 @@ address {
    height: 100%;
 }
 .mission p {
-    padding: 0 100px 0 0;
+    padding: 0 6.7vw 0 0;
     
 }
 li {
@@ -202,21 +210,21 @@ i {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    padding: 90px 200px 50px 200px;
+    padding: 6.04vw 13vw 3.36vw 13vw;
    
     
 }
 #Titre p {
     text-align: center;
-    padding: 0 160px 0 160px;
+    padding: 0 10.74vw 0 10.74vw;
 
 }
 .evenement {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 1.34vw;
     justify-content: space-around;
-    padding: 0 150px 100px 150px;
+    padding: 0 10.07vw 6.71vw 10.07vw;
  
   
 }
@@ -236,7 +244,8 @@ i {
     padding-bottom: 19px;
 }
 
-@media (max-width: 640px) {
+/* Style pour les petits écran inférieur ou égale à 767px type mobile */
+@media (max-width: 767px) {
     .navbarCTA nav ul {
         display: none;
         /* Cache la liste de navigation */
@@ -308,14 +317,29 @@ i {
         display: none;
     }
     .Header1 img {
-        max-width: 50%;
+        max-width: 25%;
+        box-shadow: none;
     }
+    .Header2 {
+        margin-top: 6%;
+    }
+    .Miss{
+        padding: 10vw;
+    }
+    
+    .mission, .evt {
+        width: auto;
+    }
+    .mission p {
+        padding: 0;
+    }
+   
     footer span {
         text-decoration: underline;
     }
 }
-/* Styles pour les écrans de largeur supérieure à 640px */
-@media (min-width: 641px) {
+/* Styles pour les écrans de largeur supérieure à 768px */
+@media (min-width: 768px) {
     .icone-menu {
         display: none;
         /* Cache l'icône menu sur les écrans plus larges */

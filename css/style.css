@@ -154,19 +154,19 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 6px;
+    gap: 3px;
 
     font-size: 0.94vw;
     /* positionnement est centré horizontalement et équitablement réparti verticalement -
     dimensions en % ou en vw. 
     conversion de 14px en vw pour lisibilité sur différents supports*/
     background-color: #404040;
-    padding: 30px;
+    padding: 5%;
 }
 
 address {
     font-style: normal;
-    width: 40%;
+    width: 45%;
 }
 #fifthavenue {
  text-align: right;
@@ -372,7 +372,7 @@ address {
        
     }
     #fifthavenue {
-        text-align: left;
+        text-align: center;
        
     }
     .evt {
@@ -418,6 +418,9 @@ address {
     footer span {
         text-decoration: underline;
     }
+    footer p {
+        margin: 0;
+    }
     header {
         height: auto;
         background-position-y:13vw ;
@@ -426,6 +429,9 @@ address {
     .Header2 {
         margin-top: 15vw;
         margin-bottom: 12vw;
+    }
+    address {
+        width: auto;
     }
        
 }
