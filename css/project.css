@@ -91,10 +91,6 @@ header {
     flex-direction: row;
     
 }
-.Header2 {
-    margin-bottom: 6%;
-}
-
 .navbarCTA {
     display: flex;
     align-items: center;
@@ -161,7 +157,9 @@ button:hover {
     margin-bottom: 4%;
     border-bottom: #fb2056 solid 0.268vw;
 }
-
+.Header2 {
+    margin-bottom: 6%;
+}
 
 footer {
 
@@ -171,7 +169,7 @@ footer {
     conversion de 14px en vw pour lisibilité sur différents supports*/
     background-color: #404040;
     text-align: center;
-    padding: 30px;
+    padding: 2.1vw;
 }
 
 address {
@@ -257,6 +255,11 @@ section {
     .icone-menu:hover {
         background-color: #da1c4b;
     }
+    .Header1 {
+        background-color: #f0f0f0;
+        color: #000;
+    }
+
     img {
         max-width: 99%; /* Limite la largeur de l'image pour éviter qu'elle soit trop grande */
         height: auto; /* Maintient le ratio de l'image */
@@ -296,6 +299,12 @@ section {
     }
     .Header1 img {
         max-width: 25%;
+    }
+    .Header2 {
+        margin-top: 6%;
+    }
+    .image img {
+        width: 100%;
     }
     footer span {
         text-decoration: underline;
