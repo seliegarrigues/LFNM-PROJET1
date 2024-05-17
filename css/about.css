@@ -257,6 +257,9 @@ i {
         margin: 0;
         padding:3%
     }
+    .Header1 img {
+        max-width: 50%;
+    }
     #logoblanc, .navbarCTA button {
         display: none;
     }

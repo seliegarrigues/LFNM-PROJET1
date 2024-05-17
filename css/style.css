@@ -310,8 +310,8 @@ address {
 }
 
 /* comportement du menu sur différentes largeurs d'écrans
- -Styles pour les écrans de largeur inférieure ou égale à 640px */
-@media (max-width: 640px) {
+ -Styles pour les écrans de largeur inférieure ou égale à 767px */
+@media (max-width: 767px) {
     .navbarCTA nav ul {
         display: none;
         /* Cache la liste de navigation */
@@ -347,14 +347,14 @@ address {
     }
     
     img {
-        max-width: 99%; /* Limite la largeur de l'image pour éviter qu'elle soit trop grande */
+        max-width: 100%; /* Limite la largeur de l'image pour éviter qu'elle soit trop grande */
         height: auto; /* Maintient le ratio de l'image */
     }
     body, footer, header,a {
         font-size: 9px;
     }
     button {
-        width: 9vh;
+        width: 21vw;
     }
     h1 {
         font-size: 8vw;
@@ -392,6 +392,9 @@ address {
         justify-content: center;
         
     }
+    .bg-fix-2 button {
+        width: 30%;
+    }
     .destination {
         padding: 1% 6% 1% 6%;
         background-color: #f0f0f0;
@@ -403,6 +406,7 @@ address {
     }
     #logoblanc, .navbarCTA button {
         display: none;
+        /* Cache le logo blanc sur les  plus petits écrans type mobile */
     }
     .Header1 img {
         max-width: 50%;
@@ -414,13 +418,22 @@ address {
     footer span {
         text-decoration: underline;
     }
+    header {
+        height: auto;
+        background-position-y:13vw ;
+        background-attachment: local;
+    }
+    .Header2 {
+        margin-top: 15vw;
+        margin-bottom: 12vw;
+    }
        
 }
 
 
 
-/* Styles pour les écrans de largeur supérieure à 640px */
-@media (min-width: 641px) {
+/* Styles pour les écrans de largeur supérieure à 768px */
+@media (min-width: 768px) {
     .banner, #quote, img {
         flex-direction: row; /* Les éléments sont en ligne sur les écrans plus larges*/ 
         justify-content: space-evenly; /* Distribue l'espace uniformément ;*/
@@ -439,6 +452,7 @@ address {
     }
     #logoblack {
         display: none;
+        /* Cache le logo noir sur les écrans plus larges */
     }
 }
 
