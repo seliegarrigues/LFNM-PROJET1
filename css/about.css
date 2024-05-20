@@ -53,7 +53,7 @@ img {
     max-height: 100%;
     border-radius: 4px;
     object-fit: cover;
-    box-shadow: 10px 10px 0 1px rgba(0, 0, 0, .07);
+    box-shadow: 0.7vw 0.7vw 0 1px rgba(0, 0, 0, .07);
     filter: brightness(103%) contrast(96%)saturate(101%) hue-rotate(353deg);
     width: 96%;
 }
@@ -236,30 +236,34 @@ i {
         height: auto; /* Maintient le ratio de l'image */
     }
     body, footer, header,a {
-        font-size: 9px;
+        font-size: 1.825vw;
+    }
+    p {
+        font-size: 2.603vw;
     }
     button {
-        width: 9vh;
+        width: 21vw;
     }
     h1 {
-        font-size: 8vw;
+        font-size: 3.911vw;
     }
     h2 {
-        font-size: 4.295vw;
+        font-size: 3.129vw;
        
     }
     h3 {
-        font-size:2.282vw;
+        font-size:3.911vw;
         
     }
     h4 {
-        font-size: 1.611vw;
+        font-size: 3.129vw;
        
     }
     #fifthavenue {
         text-align: left;
        
     }
+    
     .Header1 {
         background-color: #f0f0f0;
         margin: 0;
@@ -277,9 +281,14 @@ i {
     }
     .Header2 {
         margin-top: 6%;
+        padding-bottom: 6%;
+    }
+    .Miss {
+        display: flex;
+        flex-flow: column wrap;
     }
     .mission {
-        width: auto;
+        width: 100%;
     }
     .mission p {
         padding: 0;
